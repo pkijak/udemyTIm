@@ -10,15 +10,18 @@ public class PC {
         this.motherboard = motherboard;
     }
 
-    public Case getTheCase() {
-        return theCase;
+
+    public void loadPorgram(String program) {
+        motherboard.loadPorgram(program);
     }
 
-    public Monitor getMonitor() {
-        return monitor;
+    public void powerUp() {
+        theCase.pressPowerButton();
+        drawLogo();
     }
 
-    public Motherboard getMotherboard() {
-        return motherboard;
+    private void drawLogo() {
+        System.out.println("Welcome to " + motherboard.getManufacturer() + " systemn!");
+        monitor.drawPixelAt(50,50,"red");
     }
 }

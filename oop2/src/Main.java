@@ -9,8 +9,12 @@ public class Main {
 
         PC komputer = new PC(theCase, monitor, motherboard);
 
-        komputer.getMonitor().drawPixelAt(50,30,"red");
-        komputer.getMotherboard().loadPorgram("testowy");
-        komputer.getTheCase().pressPowerButton();
+//        komputer.getMonitor().drawPixelAt(50,30,"red");
+//        komputer.getMotherboard().loadPorgram("testowy");
+//        komputer.getTheCase().pressPowerButton();
+
+        komputer.powerUp();
+        komputer.loadPorgram("test");
+
     }
 }
