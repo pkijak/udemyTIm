@@ -6,7 +6,7 @@ public class Hamburger {
     private String breadType;
     private boolean meat;
     private Additions[] additions = new Additions[4];
-    private int liczbaDodatkow = 0;
+    private int liczbaDodatkow = 4;
 
     public Hamburger(String name, String breadType, boolean meat) {
         this.name = name;
@@ -15,7 +15,7 @@ public class Hamburger {
         this.basePrice = 3;
 
     }
-    
+
     public void dodajDodatek(Additions dodatek) {
         if (liczbaDodatkow >= additions.length) {
             System.out.println("Maksymalna ilosc dodatkow osiagnieta");

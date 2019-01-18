@@ -10,13 +10,23 @@ public class Main {
 //                Kielbasa("Kielbasa",0.50);
 
         Hamburger burger = new Hamburger("Test","Bialy",true);
+//
+//        burger.dodajDodatek(Additions.Pomidor);
+//        burger.dodajDodatek(Additions.Cebula);
+//        burger.dodajDodatek(Additions.Ogorek);
+//        burger.dodajDodatek(Additions.Papryka);
+//        burger.obliczBurgera();
 
-        burger.dodajDodatek(Additions.Pomidor);
-        burger.dodajDodatek(Additions.Pomidor);
-        burger.dodajDodatek(Additions.Kielbasa);
-        burger.dodajDodatek(Additions.Kielbasa);
+        Hamburger zdrowy = new HealthyBurger("Wege","White",false);
 
-        burger.obliczBurgera();
+        zdrowy.dodajDodatek(Additions.Ogorek);
+        zdrowy.dodajDodatek(Additions.Ogorek);
+        zdrowy.dodajDodatek(Additions.Ogorek);
+        zdrowy.dodajDodatek(Additions.Ogorek);
+        zdrowy.dodajDodatek(Additions.Ogorek);
+        zdrowy.dodajDodatek(Additions.Ogorek);
+        zdrowy.obliczBurgera();
+
 
     }
 }
