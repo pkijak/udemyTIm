@@ -34,7 +34,6 @@ public class Storage {
                 "Nazwa: " + items[id].getNazwa() +
                 "\n Cena: " + items[id].getCena() +
                 "\n Stan: " + items[id].getStan() + "/10");
-
-        testuje chuj wie co
+        System.out.println("testuje sobie co tu mozna wstawic");
     }
 }
