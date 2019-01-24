@@ -35,6 +35,13 @@ public class Storage {
                 "\n Cena: " + items[id].getCena() +
                 "\n Stan: " + items[id].getStan() + "/10");
 
-                   
+        System.out.println("chuj wie co tu zrobie");
+        System.out.println("moze cos zepsujemy");
+
+
+    }
+
+    public static void pokazitem() {
+        System.out.println("test");
     }
 }
