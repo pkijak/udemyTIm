@@ -53,6 +53,7 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("Usun przedmiot");
+                    storage.remove(in.nextInt());
                     break;
                 case 5:
                     System.out.println("Bilans");
