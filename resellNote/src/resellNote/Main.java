@@ -11,13 +11,21 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("[    resell note    ]");
-        System.out.println(commands);
+        System.out.println("Menu:\n" +
+                "[-1] Quit \n" +
+                "[0] Dostepne polecenia\n" +
+                "[1] Lista Przedmiotow\n" +
+                "[2] Dodaj Przedmiot \n" +
+                "[3] Edytuj Przedmiot\n" +
+                "[4] Usun Przedmiot\n" +
+                "[5] Bilans\n");
 
         Storage storage = new Storage();
 
 
         int choice = 0;
         boolean quit = false;
+
         while (!quit) {
             try {
                 System.out.print("Wprowadz polecenie: ");
@@ -28,7 +36,6 @@ public class Main {
             }
 
             switch (choice) {
-
                 default:
                     System.out.println("Wybrano niepoprawna opcje, wprowadz polecenie");
                     break;
@@ -43,20 +50,20 @@ public class Main {
                     storage.itemsList();
                     break;
                 case 2:
-                    storage.addQuick("Pirate Black",900,8,11);
-                    storage.addQuick("Bogo",1200,9,"Black");
-                    storage.addQuick("Beluga 1.0",1400,7,10);
+                    storage.addQuick("Pirate Black", 900, 8, 11);
+                    storage.addQuick("Bogo", 1200, 9, "Black");
+                    storage.addQuick("Beluga", 1400, 7, 10);
                     break;
                 case 3:
-                    System.out.println("Edytuj przedmiot");
-                    storage.getIDitem();
+                    storage.modify();
                     break;
                 case 4:
                     System.out.println("Usun przedmiot");
                     storage.remove(in.nextInt());
                     break;
                 case 5:
-                    System.out.println("Bilans");
+                    storage.getIDitem();
+
                     break;
             }
         }

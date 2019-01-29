@@ -54,4 +54,28 @@ public class Item {
     public int getId() {
         return id;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setCondition(int condition) {
+        this.condition = condition;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    private void changeCondition(int condition) {
+        this.condition = condition;
+    }
 }
