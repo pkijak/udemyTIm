@@ -53,12 +53,13 @@ public class Storage {
             System.out.println("Przedmiot " + name + " dodany do listy");
         }
     }
+
     public void remove(int position) {
-        item.remove((position-1));
+        item.remove((position - 1));
     }
 
     public void getIDitem() {
-        for(int i = 0; i < item.size(); i++) {
+        for (int i = 0; i < item.size(); i++) {
             System.out.println(item.get(i).getId());
         }
 
